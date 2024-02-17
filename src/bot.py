@@ -120,7 +120,7 @@ def handle_slash_command():
 				"multiline": True,
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Gibt es weitere Details oder benötigte Ressourcen?"
+					"text": "Gibt es weitere Details oder benoetigte Ressourcen?"
 				}
 			},
 			"label": {
