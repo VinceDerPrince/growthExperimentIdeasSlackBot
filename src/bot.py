@@ -15,6 +15,10 @@ app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(SIGNING_SECRET, '/slack/events', app)
 client = slack.WebClient(token=SLACK_TOKEN)
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 @app.route('/slack/idea', methods=['POST'])
 def handle_slash_command():
     # Parse the request payload
